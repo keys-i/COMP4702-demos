@@ -637,9 +637,6 @@ export default function NeuralNetworkDemo() {
           . The lines' colors also indicate the weight's sign: &nbsp;
           <span style={{ color: "#2ecc71" }}>Green</span> for positive, &nbsp;
           <span style={{ color: "#e74c3c" }}>Red</span> for negative.
-          <br />
-          Explore the network's behavior and witness the dynamics of neural
-          signals!
         </p>
       </div>
     </div>
