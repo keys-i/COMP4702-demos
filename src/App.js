@@ -620,13 +620,26 @@ export default function NeuralNetworkDemo() {
 
       <div className="info-panel">
         <p>
-          This interactive demo uses the sigmoid activation function. Node
-          colors represent activation levels (blue=low, red=high).
-        </p>
-        <p>
-          Connection line thickness represents the signal strength (weight ×
-          input value), and colors show weight sign (green=positive,
-          red=negative).
+          <span>Explore the Interactive Demo:</span>
+          <br />
+          &nbsp;&nbsp;This demo visualizes the{" "}
+          <span>Sigmoid Activation Function</span> in action.
+          <br />
+          <br />
+          <span style={{ color: "#16a085" }}>Node Colors</span> represent the
+          activation levels: <span style={{ color: "#3498db" }}>Blue</span>{" "}
+          indicates low activity, &nbsp;
+          <span style={{ color: "#e74c3c" }}>Red</span> indicates high activity.
+          <br />
+          <span style={{ color: "#16a085" }}>Connection Line Thickness</span>
+          &nbsp; corresponds to the signal strength, calculated as
+          <span style={{ fontWeight: "bold" }}>&nbsp;Weight × Input Value</span>
+          . The lines' colors also indicate the weight's sign: &nbsp;
+          <span style={{ color: "#2ecc71" }}>Green</span> for positive, &nbsp;
+          <span style={{ color: "#e74c3c" }}>Red</span> for negative.
+          <br />
+          Explore the network's behavior and witness the dynamics of neural
+          signals!
         </p>
       </div>
     </div>
