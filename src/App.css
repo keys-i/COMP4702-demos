@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+/* Neural Network Demo Styles */
+
+.neural-network-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Controls Panel */
+.controls-panel {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #111827;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slider-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.control-item {
+    flex: 1;
+    min-width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.control-item label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+}
+
+.control-item input[type="range"] {
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.value-display {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.action-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.randomize-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.randomize-button:hover {
+    background-color: #2563eb;
+}
+
+.weight-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.weight-toggle input {
+    margin-right: 0.5rem;
+}
+
+/* Values Panels */
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-values-panel,
+.output-values-panel {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex: 1;
+    min-width: 240px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-values-panel h2,
+.output-values-panel h2 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.input-values-list,
+.output-values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-value-item,
+.output-value-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-value-item label,
+.output-value-item span:first-child {
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-width: 70px;
+}
+
+.input-value-item input {
+    width: 8rem;
+}
+
+.output-bar-container {
+    width: 8rem;
+    height: 1.5rem;
+    background-color: #e5e7eb;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.output-bar {
+    height: 100%;
+    border-radius: 0.25rem;
+    transition:
+        width 0.3s,
+        background-color 0.3s;
+}
+
+/* Network Visualization */
+.network-visualization {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    flex-grow: 1;
+    position: relative;
+    overflow: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.network-svg {
+    min-width: 600px;
+}
+
+/* Info Panel */
+.info-panel {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.info-panel p {
+    margin-bottom: 0.5rem;
 }
