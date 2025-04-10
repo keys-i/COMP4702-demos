@@ -147,6 +147,7 @@ export default function NeuralNetworkDemo() {
     hiddenLayers,
     neuronsPerHiddenLayer,
     outputs,
+    neuronOutputs,
   ]);
 
   // Handle input value changes
@@ -186,7 +187,7 @@ export default function NeuralNetworkDemo() {
   };
 
   // Network structure constants
-  const layerWidth = 100;
+  // const layerWidth = 100;
   const nodeRadius = 18;
   const layerGap = 150;
   const nodeGap = 50;
