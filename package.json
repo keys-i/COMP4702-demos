@@ -15,6 +15,7 @@
   },
   "homepage": "https://keys-i.github.io/wk7-MLdemo",
   "scripts": {
+    "clean": "rm -rf node_modules/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",
