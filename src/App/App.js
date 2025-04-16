@@ -105,7 +105,7 @@ const WeekList = () => {
         {weeks.map((week) => (
           <Link
             key={week}
-            to={`/COMP4702-demos/week${week}`}
+            to={`/week${week}`}
             style={styles.card}
             onMouseOver={(e) => {
               Object.assign(e.currentTarget.style, styles.cardHover);
@@ -164,7 +164,7 @@ const App = () => {
         return (
           <Route
             key={week}
-            path={`/COMP4702-demos/week${week}`}
+            path={`/week${week}`}
             element={<WeekPage week={week} />}
           />
         );

@@ -11,8 +11,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/COMP4702-demos/" element={<App />} />
-        <Route path="/COMP4702-demos/week7" element={<Week7 />} />
+        <Route path="/" element={<App />} />
+        <Route path="/week7" element={<Week7 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
