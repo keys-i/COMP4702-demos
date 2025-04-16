@@ -1,7 +1,7 @@
 {
   "name": "neural-network-demo",
   "version": "0.1.0",
-  "homepage": "https://keys-i.github.io/COMP4702-demos",
+  "homepage": "https://keys-i.github.io/COMP4702-demos/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
