@@ -1,13 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+import App from "./App/App";
+import Week7 from "./Week7/Week7";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/COMP4702-demos/" element={<App />} />
+        <Route path="/COMP4702-demos/week7" element={<Week7 />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 );
 

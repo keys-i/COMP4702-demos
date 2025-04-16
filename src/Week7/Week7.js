@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./App.css";
+import "./Week7.css";
 
 export default function NeuralNetworkDemo() {
   const [inputs, setInputs] = useState(2);
